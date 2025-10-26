@@ -1,0 +1,32 @@
+package com.example.app;
+
+public class Line {
+    private Point start;
+    private Point end;
+
+    public Line(Point start, Point end) { // Конструктор линии
+        this.start = start;
+        this.end = end;
+    }
+
+    public Point getStart() { // Геттеры и сеттеры
+        return start;
+    }
+
+    public void setStart(Point start) {
+        this.start = start;
+    }
+
+    public Point getEnd() {
+        return end;
+    }
+
+    public void setEnd(Point end) {
+        this.end = end;
+    }
+
+    @Override
+    public String toString() { // Строковое представление линии
+        return "Линия от " + start + " до " + end;
+    }
+}
